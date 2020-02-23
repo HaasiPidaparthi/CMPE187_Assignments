@@ -86,10 +86,15 @@ public class gumball{
         int gumball_no = totalGumballs(amount, color);
 
         // Singular / Plural tense for gumball
-        if (gumball_no == 1) {
-            System.out.println("You bought a total of " + gumball_no + " gumball!");
+        // Displays the gumball color user received
+        if (gumball_no == 1 && color == 0) {
+            System.out.println("You bought a total of " + gumball_no + " Red gumball!");
+        } else if (gumball_no == 1 && color == 1) {
+            System.out.println("You bought a total of " + gumball_no + " Yellow gumball!");
+        } else if (gumball_no > 1 && color == 0) {
+            System.out.println("You bought a total of " + gumball_no + " Red gumballs!");
         } else {
-            System.out.println("You bought a total of " + gumball_no + " gumballs!");
+            System.out.println("You bought a total of " + gumball_no + " Yellow  gumballs!");
         }
 
         System.out.println("Here is your change: " + change(amount, color) + " cents.");

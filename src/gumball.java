@@ -47,7 +47,7 @@ public class gumball{
                 while (option == 0) {
                     System.out.print("\nPlease insert coins (5, 10, or 25 cents only!): ");
                     coin = sc.nextInt();
-                    if (coin == 5 || coin == 10 || coin == 15) {
+                    if (coin == 5 || coin == 10 || coin == 25) {
                         amount += coin;
                         while (true) { 
                             try {
@@ -61,7 +61,7 @@ public class gumball{
                                     break;
                                 } else if (option == 0 || option == 1) { break; }   
                                 else {
-                                    System.out.println("Error: Please entry 0 or 1!");
+                                    System.out.println("Error: Please enter 0 or 1!");
                                 }
                             } catch (InputMismatchException e) {
                                 System.out.println("Error: Please enter a valid input!\n");

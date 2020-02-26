@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class scholarship {
 	public static void main(final String[] args) {
 
-		final Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		int age;				//variable for A
 		boolean lived;			//variable for B

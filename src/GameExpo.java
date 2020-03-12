@@ -25,6 +25,7 @@ public class GameExpo{
             }
             catch(InputMismatchException e) {
                 System.out.println("You entered invalid input. Please enter valid number (Boy - 0, Girl - 1)");
+                sc.next();
             }
         }
 

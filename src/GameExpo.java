@@ -31,8 +31,13 @@ public class GameExpo{
 
         // get user's age
         System.out.print("Please enter your age: ");
+        while (!sc.hasNextInt()) {
+            System.out.println("You entered invalid input");
+            System.out.print("Please enter your age: ");
+            sc.next(); 
+        }
         age = sc.nextInt();
-
+        
         if(gender == 0){  
             boy(age);
         }

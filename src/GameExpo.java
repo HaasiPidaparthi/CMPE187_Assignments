@@ -56,7 +56,7 @@ public class GameExpo{
             System.out.println("You bought a ticket to participate in Quiz Competition");
 
         }
-        else if(age < 6){
+        else if(age < 6 && age > 0){
             System.out.println("You bought a ticket to participate in Rhyming Competition");
         }
         else if(age > 20){
@@ -76,7 +76,7 @@ public class GameExpo{
         else if(age > 10 && age < 15){
             System.out.println("You bought a ticket to participate in Essay Writing Competition");
         }
-        else if(age < 6){
+        else if(age < 6 && age > 0){
             System.out.println("You bought a ticket to participate in Rhyming Competition");
         }
         else if(age > 20){

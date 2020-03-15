@@ -9,7 +9,7 @@ public class GameExpo{
         int gender;
         int age;
 
-        System.out.println("Welcome to a Game Expo for Children");
+        System.out.println("Welcome to the Game Expo for Children");
 
         // get user's gender
         while(true){
@@ -50,17 +50,17 @@ public class GameExpo{
     public static void boy(int age){
        
         if(age > 7 && age < 10){
-            System.out.println("You bought a ticket for participating in Storytelling Competition");
+            System.out.println("You bought a ticket to participate in Storytelling Competition");
         }
         else if(age > 11 && age < 15){
-            System.out.println("You bought a ticket for participating in a Quiz Competition");
+            System.out.println("You bought a ticket to participate in Quiz Competition");
 
         }
         else if(age < 6){
-            System.out.println("You bought a ticket for participating in Rhyming Competition");
+            System.out.println("You bought a ticket to participate in Rhyming Competition");
         }
         else if(age > 20){
-            System.out.println("You bought a ticket for participating in Poetry Competition");
+            System.out.println("You bought a ticket to participate in Poetry Competition");
         }
         else{
             System.out.println("Sorry. You cannot participate in any competitions");
@@ -71,16 +71,16 @@ public class GameExpo{
     public static void girl(int age){
         
         if(age > 7 && age < 10){
-            System.out.println("You bought a ticket for participating in Drawing Competition");
+            System.out.println("You bought a ticket to participate in Drawing Competition");
         }
         else if(age > 10 && age < 15){
-            System.out.println("You bought a ticket for participating in Essay Writing Competition");
+            System.out.println("You bought a ticket to participate in Essay Writing Competition");
         }
         else if(age < 6){
-            System.out.println("You bought a ticket for participating in Rhyming Competition");
+            System.out.println("You bought a ticket to participate in Rhyming Competition");
         }
         else if(age > 20){
-            System.out.println("You bought a ticket for participating in Poetry Competition");
+            System.out.println("You bought a ticket to participate in Poetry Competition");
         }
         else{
             System.out.println("Sorry. You cannot participate in any competitions");

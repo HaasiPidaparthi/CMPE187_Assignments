@@ -11,18 +11,18 @@ public class PrintDate{
     	boolean validDate = false;
     	String input = "";
 
-        // get the current dates from user
         Scanner sc = new Scanner(System.in);
         dateFormat.setLenient(false);
 
+	// check if the user input date is valid
         while(!validDate) {
-	        try {
-	        	System.out.print("Enter a date (MM/DD/YYYY): ");
+		try {
+	      		System.out.print("Enter a date (MM/DD/YYYY): ");
 	        	input = sc.nextLine();
 	        	Date date = dateFormat.parse(input);
 
 	        	// check year
-				cal.setTime(date); 
+			cal.setTime(date); 
 	        	boolean year = validYear(input);
 	        	if (year) { 
 	        		validDate = true; 
@@ -36,12 +36,13 @@ public class PrintDate{
 	        	System.out.println("Error: Invalid input\n"); 
 	        }
 	    }
-	    //System.out.println(date);
+	    
         String next = nextDate(input);
         System.out.println("You entered: " + input);
         System.out.println("Next Day: " + next + "\n");
     }
     
+    // return the next date on the user input
     public static String nextDate(String input) { 
         String tomorrow = "";
         try {	
